@@ -1,5 +1,6 @@
 {
   "name": "keeper-part-3-completed",
+  "homepage": "https://arnavk1872.github.io/Keeper-App/",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -10,13 +11,17 @@
     "react-scripts": "3.2.0"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "typescript": "3.3.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   },
   "browserslist": [
     ">0.2%",
